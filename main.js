@@ -203,5 +203,4 @@ async function main() {
     }
 }
 
-console.log("supported ciphers:", tls.getCiphers());
-//main();
+main();
