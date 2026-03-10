@@ -4,6 +4,7 @@ import * as glob from "@actions/glob";
 import fs from "node:fs";
 import showdown from "showdown";
 import path from "node:path";
+import * as tls from "node:tls";
 
 function getText(textOrFile, convertMarkdown) {
     let text = textOrFile;
@@ -202,4 +203,5 @@ async function main() {
     }
 }
 
-main();
+console.log("supported ciphers:", tls.getCiphers());
+//main();
